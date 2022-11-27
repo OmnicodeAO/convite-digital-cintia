@@ -32,7 +32,7 @@ const Home: NextPage = () => {
   const handleConfirmation = async () => {
     if (!phone) {
       return setErr(
-        "Insira o seu número de telefone para fazer a confirmação."
+        "Insira o seu primeiro e último nome sem acentuações (ex: ´, ^, ~)."
       );
     }
     const result = await confirmPresence(phone, "confirm");
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       });
       Router.push("/confirmed");
     } else {
-      return setErr("Infelizmente o número não consta na lista.");
+      return setErr("Infelizmente o seu nome não consta na lista ou tente inserir o seu nome sem acentuações (ex: ´, ^, ~).");
     }
   };
 
@@ -55,22 +55,22 @@ const Home: NextPage = () => {
   };
 
   const mapMapUrl = `https://www.google.com/maps/search/?api=1&query=${location.lat}%2C${location.long}`;
+  
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white bg-black main-container ">
+    <div className= "z-0 flex flex-col items-center justify-center min-h-screen text-white bg-center bg-cover bg-bg main-container ">
       <Head>
         <title>Convite digital</title>
         <link rel="icon" href="/tapago.svg" />
       </Head>
-
-      <section className="flex flex-col flex-1 w-full bg-cover max-w-100 l-451 sm:bg-bg bg-bgsm">
-        
-        <div className="flex justify-between text-lg font-bold mt-113">
-          <p className="ml-119">IV</p>
-          <p className="mr-115">WA</p>
+       
+      <section className="flex flex-col flex-1 w-full max-w-100 l-451 ">
+      <div className="fixed z-10 block w-40 h-44 align-center">
+        <div className="z-10 flex flex-row flex-nowrap ">
+          <img alt="" src="/Flowers_left.png" className="ml-[-10px] w-24 basis-0 h-44 "></img>
+          <h1 className="mt-10 text-[32px] text-center basis-11/12 font-lucida_calligraphy ">Cíntia Alexandre</h1>
+          <img alt="" src="/Flowers_right.png" className="w-24 basis-0 h-37 "></img>
         </div>
-        
-        <h1 className="mt-2 text-2xl font-extrabold text-center shadow">PARTY</h1>
-
+      </div> 
         <div className="flex flex-col mt-6 space-y-2 text-center align-middle">
           <p className="text-lg uppercase">31/06</p>
           <p className="uppercase text-md">18:00</p>

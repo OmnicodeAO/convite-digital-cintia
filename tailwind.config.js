@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
+      height: {
+        "37":"9.5rem"
+      },
       colors: {
         primary: {
           50: "#eff6ff",
@@ -24,11 +28,12 @@ module.exports = {
         "115":"15px",
         "100":"100vh",
         "113":"113px",
-        "451":"451px"
+        "451":"451px",
+        "555":"22px"
       },
       backgroundImage: {
-        'bg' : "url('/party.png')",
-        "bgsm":"url('/partysm.png')"
+        'bg' : "url('/bg.png')",
+        "bgsm":"url('/bg.png')"
       },
       
       backgroundSize: {
@@ -49,7 +54,7 @@ module.exports = {
     },
    
     fontFamily: {
-      body: ["Inter", "ui-sans-serif", "Roboto"],
+      lucida_calligraphy: ["Lucida Calligraphy", "sans-serif"],
     },
   },
   plugins: [
