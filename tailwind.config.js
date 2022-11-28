@@ -5,7 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
       height: {
         "37":"9.5rem"
       },
@@ -43,10 +42,10 @@ module.exports = {
 
     },
     screens: {
-      'sm': '576px',
+      'sm': '342px',
       // => @media (min-width: 576px) { ... }
 
-      'md': '960px',
+      'md': '462px',
       // => @media (min-width: 960px) { ... }
 
       'lg': '1440px',
@@ -55,6 +54,7 @@ module.exports = {
    
     fontFamily: {
       lucida_calligraphy: ["Lucida Calligraphy", "sans-serif"],
+      lucida_bright: ["Lucida Bright", "serif"],
     },
   },
   plugins: [
