@@ -75,7 +75,7 @@ const location ={
         <div className="flex flex-col mt-0 space-y-2 text-center align-middle">
           <p className="text-[22px] font-lucida_calligraphy">Birthday</p>
           <p className="text-md font-lucida_bright">03/12</p>
-          <p className="font-lucida_bright text-md">17:00</p>
+          <p className="font-lucida_bright text-md">18:00</p>
         </div>
 
         <div className="flex flex-row justify-center mt-3 text-center align-middle">

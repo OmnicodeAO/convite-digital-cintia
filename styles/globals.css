@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("//fonts.cdnfonts.com/css/lucida-calligraphy-new");
+@import url("https://fonts.cdnfonts.com/css/lucida-calligraphy-new");
                 
 @layer base {
   html {
@@ -9,4 +9,8 @@
   }
 }
 
+@font-face {
+  font-family: "Lucida Calligraphy Regular";
+  src: url(/public/Lucida_Calligraphy_Font.ttf);
+}
 

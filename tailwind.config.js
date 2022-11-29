@@ -53,7 +53,7 @@ module.exports = {
     },
    
     fontFamily: {
-      lucida_calligraphy: ["Lucida Calligraphy", "sans-serif"],
+      lucida_calligraphy: ["Lucida Calligraphy Regular"],
       lucida_bright: ["Lucida Bright", "serif"],
     },
   },
