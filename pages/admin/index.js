@@ -4,7 +4,7 @@ import { useState } from "react";
 import { addGuest } from "../../services/firebase";
 import Toast from "../../src/components/Toast";
 export default function CreateGuest() {
-  const [invitedBy, setInvitedBy] = useState("iverson");
+  const [invitedBy, setInvitedBy] = useState("");
   const [name, setName] = useState(String);
   const [phone, setPhone] = useState(String);
   const [notification, setNotification] = useState({
@@ -19,7 +19,7 @@ export default function CreateGuest() {
   }
   async function handleAddGuest(e) {
     e.preventDefault();
-    if (!name || !phone) return alert("Preencha todos os campos!");
+    if (!name) return alert("O nome é obrigatório!");
     try {
       const result = await addGuest(name, phone, invitedBy);
       if (result?.state == "success") {
@@ -109,7 +109,7 @@ export default function CreateGuest() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            {/* <div className="flex items-center justify-between">
               <div className="text-sm">
                 <a
                   href="#"
@@ -152,7 +152,7 @@ export default function CreateGuest() {
                   Wanderson
                 </label>
               </div>
-            </div>
+            </div>*/}
 
             <div>
               <button
