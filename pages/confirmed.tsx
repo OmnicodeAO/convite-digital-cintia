@@ -83,7 +83,7 @@ const Home: NextPage = () => {
       <main className="flex flex-col justify-start flex-1 w-full max-w-md px-5 pt-5 text-center">
         <div className="flex flex-col mt-4 font-lucida_bright">
           <p>
-            Olá {guest?.name}, obrigado por ter confirmado a sua presença. Evite chegar depois das 18h porque a comida acaba. 
+            Olá {guest?.name}, obrigado por ter confirmado a sua presença. Evite chegar depois das 18h porque a comida acaba e não te esqueças do presente.
             <strong> DRESSCODE: rapazes camisa social e meninas vestidos casuais. </strong>
           </p>
           <div
