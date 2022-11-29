@@ -64,7 +64,7 @@ const location ={
       
         <div className="flex justify-center flex-row mt-[83px] ">
           <img alt="Flores à direita do nome" src="/Flowers_left.png" className="w-24 h-44 ml-[-20px]"></img>
-          <h1 className="z-10 sm:mt-[35px] md:mt-[55px] italic text-[31px] text-center font-lucida_calligraphy  ">Cíntia Alexandre</h1>
+          <h1 className="z-10 sm:mt-[35px] md:mt-[55px] italic text-[31px] text-center font-lucida_calligraphy font-garamond">Cíntia Alexandre</h1>
           <img alt="Flores à esquerda do nome" src="/Flowers_right.png" className="w-24 h-37 pr-[-10px]"></img>
         </div>
 
@@ -73,7 +73,7 @@ const location ={
         </div>
 
         <div className="flex flex-col mt-0 space-y-2 text-center align-middle">
-          <p className="text-[22px] font-lucida_calligraphy">Birthday</p>
+          <p className="text-[22px] font-lucida_calligraphy font-garamond">Birthday</p>
           <p className="text-md font-lucida_bright">03/12</p>
           <p className="font-lucida_bright text-md">18:00</p>
         </div>

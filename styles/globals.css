@@ -17,5 +17,6 @@
   url("/public/efbd8f0d869bf61fbe0f139a1602cda8.woff") format("woff"), /* chrome、firefox */
   url("/public/efbd8f0d869bf61fbe0f139a1602cda8.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
   url("/public/efbd8f0d869bf61fbe0f139a1602cda8.svg#Lucida Calligraphy W01") format("svg"); /* iOS 4.1- */
+  font-family: 'Garamond';
 }
 
