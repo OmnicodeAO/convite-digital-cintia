@@ -17,29 +17,29 @@ export default function List() {
   return (
     <>
       <Head>
-        <title>Convite simples - Convidados</title>
+        <title>Convite Digital - Convidados</title>
         <link rel="icon" href="/tapago.svg" />
       </Head>
-      <div className="bg-white shadow overflow-hidden mb-5 sm:rounded-lg">
+      <div className="mb-5 overflow-hidden bg-white shadow sm:rounded-lg">
         <div className="px-4 py-5 sm:px-6">
-          <h3 className="text-lg leading-6 font-medium text-gray-900">
-            Festa de aniversário de @iverson e @wanderson
+          <h3 className="text-lg font-medium leading-6 text-gray-900">
+            Festa de aniversário de @Cíntia
           </h3>
-          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+          <p className="max-w-2xl mt-1 text-sm text-gray-500">
             Lista de convidados
           </p>
         </div>
-        <div className="border-t border-gray-200 overflow-x-auto relative">
+        <div className="relative overflow-x-auto border-t border-gray-200">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead className="text-xs mt-5 text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <thead className="mt-5 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
-                <th scope="col" className="py-3 px-6">
+                <th scope="col" className="px-6 py-3">
                   Nome
                 </th>
-                <th scope="col" className="py-3 px-6">
+                <th scope="col" className="px-6 py-3">
                   Convidado por
                 </th>
-                <th scope="col" className="py-3 px-6">
+                <th scope="col" className="px-6 py-3">
                   Contato
                 </th>
               </tr>
@@ -53,12 +53,12 @@ export default function List() {
                   >
                     <th
                       scope="row"
-                      className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                     >
                       {item.name}
                     </th>
-                    <td className="py-4 px-6">{item.invitedby}</td>
-                    <td className="py-4 px-6">{item.phone}</td>
+                    <td className="px-6 py-4">{item.invitedby}</td>
+                    <td className="px-6 py-4">{item.phone}</td>
                   </tr>
                 ))}
             </tbody>
@@ -68,13 +68,13 @@ export default function List() {
       <div className="flex justify-between">
         <a
           onClick={() => route.back()}
-          className="px-5 cursor-pointer text-gray-700 "
+          className="px-5 text-gray-700 cursor-pointer "
         >
           Voltar
         </a>
         <a
           onClick={() => route.push("/admin")}
-          className="px-5 cursor-pointer text-blue-500 font-medium"
+          className="px-5 font-medium text-blue-500 cursor-pointer"
         >
           Adicionar outro
         </a>

@@ -50,7 +50,7 @@ const Home: NextPage = () => {
      <div className= " flex flex-col items-center justify-center min-h-screen text-white bg-center bg-cover bg-bg main-container ">
       <Head>
         <title>Convite digital</title>
-        <link rel="icon" href="/tapago.svg" />
+        <link rel="icon" href="/model.gif" />
       </Head>
        
       <section className="flex justify-center flex-col flex-1 w-full max-w-100 l-451 ">
