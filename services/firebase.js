@@ -28,7 +28,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //confirmation function
-export async function confirmPresence(number, option) {
+export async function confirmPresence(name, option) {
   const docRef = doc(db, "convidados", `${number}`);
   const docSnap = await getDoc(docRef);
   let state;
