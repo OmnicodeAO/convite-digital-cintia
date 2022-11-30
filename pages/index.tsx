@@ -56,7 +56,7 @@ const location ={
     <div className= "flex flex-col items-center justify-center min-h-screen text-white bg-center bg-cover bg-bg main-container">
       <Head>
         <title>Convite digital</title>
-      
+        <link rel="icon" href="/Logo.png" />
       </Head>
        
       <section className="flex flex-col justify-center flex-1 w-full max-w-100 l-451 ">
