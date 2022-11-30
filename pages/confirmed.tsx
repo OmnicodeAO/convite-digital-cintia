@@ -58,8 +58,8 @@ const Home: NextPage = () => {
 
       
         <div className="flex justify-center flex-row mt-[83px] ">
-          <img alt="Flores à direita do nome" src="/Flowers_left.png" className="w-24 h-44 ml-[-20px]"></img>
-          <h1 className="z-10 sm:mt-[35px] md:mt-[55px] italic text-[31px] text-center font-lucida_calligraphy  ">Cíntia Alexandre</h1>
+          <img alt="Flores à direita do nome" src="/Flowers_left.png" className="w-24 h-[10rem] "></img>
+          <h1 className="z-10 sm:mt-[35px] md:mt-[55px] italic text-[35px] text-center font-lucida_calligraphy  ">Cíntia Alexandre</h1>
           <img alt="Flores à esquerda do nome" src="/Flowers_right.png" className="w-24 h-37 pr-[-10px]"></img>
         </div>
 

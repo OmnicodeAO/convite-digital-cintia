@@ -42,10 +42,10 @@ module.exports = {
 
     },
     screens: {
-      'sm': '342px',
+      'sm': '284px',
       // => @media (min-width: 576px) { ... }
 
-      'md': '462px',
+      'md': '376px',
       // => @media (min-width: 960px) { ... }
 
       'lg': '1440px',
@@ -55,7 +55,6 @@ module.exports = {
     fontFamily: {
       lucida_calligraphy: ["Great Vibes", "cursive"],
       lucida_bright: ["Lucida Bright", "serif"],
-      garamond: ["Garamond"]
     },
   },
   plugins: [
@@ -63,3 +62,4 @@ module.exports = {
     require("@tailwindcss/forms"),
   ],
 };
+ 
