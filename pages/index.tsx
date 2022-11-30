@@ -13,7 +13,8 @@ const Home: NextPage = () => {
   const [err, setErr] = useState(String);
  // const [location, setLocation] = useState()
   const handlePhone = (name: string) => {
-      setName(name)
+      let clearName = name.replace(/\s/g, "");
+      setName(clearName)
     
   };
   function verifyCookie() {
