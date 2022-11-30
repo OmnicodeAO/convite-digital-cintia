@@ -68,7 +68,7 @@ const location ={
           <img alt="Flores à esquerda do nome" src="/Flowers_right.png" className="w-24 h-37 pr-[-10px]"></img>
         </div>
 
-        <div className="flex flex-col mt-[-55px] text-center align-middle">
+        <div className="flex flex-col mt-[-40px] text-center align-middle">
         <p className="text-[96px] align-center font-lucida_bright">18</p>
         </div>
 
