@@ -37,7 +37,7 @@ export default function List() {
                   Nome
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Convidado por
+                  Presença
                 </th>
                 <th scope="col" className="px-6 py-3">
                   Contato
@@ -57,7 +57,7 @@ export default function List() {
                     >
                       {item.name}
                     </th>
-                    <td className="px-6 py-4">{item.invitedby}</td>
+                    <td className="px-6 py-4">{item.confirmed?'Confirmada':'Não confirmada'}</td>
                     <td className="px-6 py-4">{item.phone}</td>
                   </tr>
                 ))}

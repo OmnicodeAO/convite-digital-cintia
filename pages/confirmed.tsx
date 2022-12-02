@@ -9,38 +9,42 @@ import { confirmPresence, getGuest } from "../services/firebase";
 import Clipboard from 'react-clipboard.js';
 
 const Home: NextPage = () => {
-  const [phone, setPhone] = useState(String);
+  const [name, setName] = useState(String);
   const [guest, setGuest] = useState(Object);
+  const [cookie, setCookie] = useState(String)
   const [err, setErr] = useState(String);
 
   async function verifyCookie() {
-    const { "convite-digital": cookie } = parseCookies();
-    if (cookie) {
-      const guest = await getGuest(cookie);
+    const { "convite-digital": savedCookie } = parseCookies();
+    if (savedCookie) {
+      setCookie(savedCookie)
+      const guest = await getGuest(savedCookie);
       setGuest(guest);
-      setPhone(guest?.phone);
+      setName(guest?.name);
     } else {
       Router.push("/");
     }
   }
   useEffect(() => {
     verifyCookie();
-  }, [phone]);
+  }, [cookie]);
 
   const cancelConfirmation = async () => {
-    const result = await confirmPresence(phone, "cancel");
+    const result = await confirmPresence(name, "cancel");
     if (result) {
 
       destroyCookie(null, "convite-digital");
       alert(
         "Presença Desconfirmada: Lamentamos que não possar celebrar conosco."
       );
-      setPhone("");
+      setName("");
+    setCookie('')
       return;
     } else {
       return setErr("Erro ao cancelar. Tente mais tarde!");
     }
   };
+  
   const location = {
     lat: "-8.9728236",
     long: "13.1502776",
